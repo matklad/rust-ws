@@ -5,6 +5,8 @@
 
 [rust]
 codegen-units = 0
+use-lld = true
 
 [target.x86_64-unknown-linux-gnu]
 llvm-config = "llvm-config"
+linker = "clang"
