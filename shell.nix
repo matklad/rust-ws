@@ -1,8 +1,9 @@
 with import <nixpkgs> {};
 pkgs.mkShell {
   buildInputs = [
-    pkgconfig
-    python cmake
+    python
+    pkgconfig cmake
     llvm_10
+    libxml2
   ];
 }
