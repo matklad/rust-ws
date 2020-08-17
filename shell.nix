@@ -6,4 +6,7 @@ pkgs.mkShell {
     llvm_10
     libxml2 zlib ncurses
   ];
+  shellHook = ''
+    export LD_LIBRARY_PATH="${zlib}/lib:${ncurses}/lib"
+  '';
 }
