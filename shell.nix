@@ -4,6 +4,6 @@ pkgs.mkShell {
     python
     pkgconfig cmake
     llvm_10
-    libxml2
+    libxml2 zlib ncurses
   ];
 }
