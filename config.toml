@@ -1,0 +1,10 @@
+[build]
+# extended = true
+# vendor = true
+# tools = ["rust-analyzer"]
+
+[rust]
+codegen-units = 0
+
+[target.x86_64-unknown-linux-gnu]
+llvm-config = "llvm-config"
