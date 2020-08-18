@@ -7,6 +7,6 @@ pkgs.mkShell {
     libxml2 zlib ncurses openssl
   ];
   shellHook = ''
-    export LD_LIBRARY_PATH="${zlib}/lib:${ncurses}/lib"
+    export LD_LIBRARY_PATH="${zlib}/lib:${ncurses}/lib:${openssl.out}/lib"
   '';
 }
