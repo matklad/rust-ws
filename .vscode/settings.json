@@ -4,5 +4,12 @@
         "check",
         "--json-output"
     ],
-    "rust-analyzer.checkOnSave.enable": false
+    "rust-analyzer.checkOnSave.enable": false,
+    "files.exclude": {
+        "**/.git": true,
+        "target/": true,
+        "build/": true,
+        "src/llvm-project/": true,
+        "src/tools/rust-analzyer": true,
+    }
 }
