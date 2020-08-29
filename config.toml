@@ -6,6 +6,7 @@
 [rust]
 codegen-units = 0
 use-lld = true
+deny-warnings = false
 
 [target.x86_64-unknown-linux-gnu]
 llvm-config = "../llvm-config"
