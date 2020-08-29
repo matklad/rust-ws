@@ -1,12 +1,9 @@
 with import <nixpkgs> {};
 pkgs.mkShell {
   buildInputs = [
-    python
-    pkgconfig cmake
-    llvm_10
-    libxml2 zlib ncurses openssl
+    python zlib openssl
   ];
   shellHook = ''
-    export LD_LIBRARY_PATH="${zlib}/lib:${ncurses}/lib:${openssl.out}/lib"
+    export LD_LIBRARY_PATH="${zlib}/lib:${openssl.out}/lib"
   '';
 }
